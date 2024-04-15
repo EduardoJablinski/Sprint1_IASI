@@ -1,0 +1,202 @@
+{
+	"info": {
+		"_postman_id": "dee5744d-6402-4ad2-85b6-2f60ae25c5fe",
+		"name": "IASI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "31110565"
+	},
+	"item": [
+		{
+			"name": "localhost:8080/api/empresas",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/empresas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/empresas/1",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/empresas/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/sintomas",
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"exec": [
+							""
+						],
+						"type": "text/javascript",
+						"packages": {}
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Intel\",\r\n    \"setorIndustrial\": \"Tecnologia\",\r\n    \"localizacao\": \"São Paulo\",\r\n    \"tipo\": \"Grande empresa\",\r\n    \"conformidadeRegular\": \"S\"\r\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/api/empresas",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas"
+					]
+				},
+				"description": "Adicionar sintoma"
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/empresas/9",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"Intel\",\r\n    \"setorIndustrial\": \"Tecnologia\",\r\n    \"localizacao\": \"Rio de Janeiro\",\r\n    \"tipo\": \"Grande empresa\",\r\n    \"conformidadeRegular\": \"N\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/api/empresas/9",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas",
+						"9"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/empresas/7",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/empresas/7",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas",
+						"7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/empresas/1/equipamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/empresas/1/equipamentos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas",
+						"1",
+						"equipamentos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/empresas/2/equipamentos/13",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/empresas/2/equipamentos/13",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"empresas",
+						"2",
+						"equipamentos",
+						"13"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "localhost:8080/api/equipamentos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/api/equipamentos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"equipamentos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
